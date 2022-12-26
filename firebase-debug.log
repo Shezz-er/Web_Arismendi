@@ -1,0 +1,101 @@
+[debug] [2022-12-26T18:18:14.137Z] ----------------------------------------------------------------------
+[debug] [2022-12-26T18:18:14.139Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\cvasq\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-12-26T18:18:14.139Z] CLI Version:   11.19.0
+[debug] [2022-12-26T18:18:14.140Z] Platform:      win32
+[debug] [2022-12-26T18:18:14.140Z] Node Version:  v16.15.1
+[debug] [2022-12-26T18:18:14.141Z] Time:          Mon Dec 26 2022 15:18:14 GMT-0300 (hora de verano de Chile)
+[debug] [2022-12-26T18:18:14.141Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-12-26T18:18:14.149Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-12-26T18:18:14.149Z] > authorizing via signed-in user (chloewired@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\cvasq\OneDrive\Escritorio\DocumentaciónAA\WebArismendi
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-12-26T18:19:06.477Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2022-12-26T18:19:07.078Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2022-12-26T18:19:07.078Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project webarismendi (Webarismendi) 
+[info] 
+=== Functions Setup
+[debug] [2022-12-26T18:19:09.678Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-12-26T18:19:09.678Z] > authorizing via signed-in user (chloewired@gmail.com)
+[debug] [2022-12-26T18:19:09.679Z] [iam] checking project webarismendi for permissions ["firebase.projects.get"]
+[debug] [2022-12-26T18:19:09.679Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/webarismendi:testIamPermissions [none]
+[debug] [2022-12-26T18:19:09.679Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/webarismendi:testIamPermissions x-goog-quota-user=projects/webarismendi
+[debug] [2022-12-26T18:19:09.679Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/webarismendi:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-12-26T18:19:10.550Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/webarismendi:testIamPermissions 200
+[debug] [2022-12-26T18:19:10.550Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/webarismendi:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-12-26T18:19:10.551Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/webarismendi/services/cloudfunctions.googleapis.com [none]
+[debug] [2022-12-26T18:19:10.552Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/webarismendi/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/webarismendi
+[debug] [2022-12-26T18:19:10.553Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/webarismendi/services/runtimeconfig.googleapis.com [none]
+[debug] [2022-12-26T18:19:10.553Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/webarismendi/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/webarismendi
+[debug] [2022-12-26T18:19:11.527Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/webarismendi/services/runtimeconfig.googleapis.com 200
+[debug] [2022-12-26T18:19:11.527Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/webarismendi/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2022-12-26T18:19:11.541Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/webarismendi/services/cloudfunctions.googleapis.com 200
+[debug] [2022-12-26T18:19:11.541Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/webarismendi/services/cloudfunctions.googleapis.com [omitted]
+[debug] [2022-12-26T18:19:11.542Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/webarismendi/services/cloudfunctions.googleapis.com:enable [none]
+[debug] [2022-12-26T18:19:11.542Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/webarismendi/services/cloudfunctions.googleapis.com:enable x-goog-quota-user=projects/webarismendi
+[debug] [2022-12-26T18:19:12.798Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/webarismendi/services/cloudfunctions.googleapis.com:enable 200
+[debug] [2022-12-26T18:19:12.798Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/webarismendi/services/cloudfunctions.googleapis.com:enable [omitted]
+[debug] [2022-12-26T18:19:22.804Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/webarismendi/services/cloudfunctions.googleapis.com [none]
+[debug] [2022-12-26T18:19:22.804Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/webarismendi/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/webarismendi
+[debug] [2022-12-26T18:19:23.684Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/webarismendi/services/cloudfunctions.googleapis.com 200
+[debug] [2022-12-26T18:19:23.684Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/webarismendi/services/cloudfunctions.googleapis.com [omitted]
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+
+[info] +  Wrote functions/package.json 
+[info] +  Wrote functions/.eslintrc.js 
+[info] +  Wrote functions/index.js 
+[info] +  Wrote functions/.gitignore 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[info] +  Wrote public/404.html 
+[debug] [2022-12-26T18:20:15.371Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2022-12-26T18:20:15.399Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2022-12-26T18:20:15.399Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"9.15.0","browserURL":"https://www.gstatic.com/firebasejs/9.15.0/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/9.15.0/firebase.tgz"},"live":{"version":"9.15","browserURL":"https://www.gstatic.com/firebasejs/live/9.15/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/9.15/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/9.15.0/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/9.15.0/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/9.15.0/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/9.15.0/firebase-auth/cordova.js","auth/react-native":"https://www.gstatic.com/firebasejs/9.15.0/firebase-auth/react-native.js","functions":"https://www.gstatic.com/firebasejs/9.15.0/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/9.15.0/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/9.15.0/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/9.15.0/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/9.15.0/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/9.15.0/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/9.15.0/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/9.15.0/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/9.15.0/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/9.15.0/firebase-firestore.memory.js"}}
+[info] +  Wrote public/index.html 
+[info] 
+[info] i  Detected a .git folder at C:\Users\cvasq 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=384722586&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2022-12-26T18:20:27.456Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2022-12-26T18:20:27.456Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2022-12-26T18:20:27.880Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2022-12-26T18:20:27.880Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2022-12-26T18:20:27.886Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2022-12-26T18:20:28.312Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2022-12-26T18:20:28.312Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"Shezz-er","id":103219649,"node_id":"U_kgDOBicBwQ","avatar_url":"https://avatars.githubusercontent.com/u/103219649?v=4","gravatar_id":"","url":"https://api.github.com/users/Shezz-er","html_url":"https://github.com/Shezz-er","followers_url":"https://api.github.com/users/Shezz-er/followers","following_url":"https://api.github.com/users/Shezz-er/following{/other_user}","gists_url":"https://api.github.com/users/Shezz-er/gists{/gist_id}","starred_url":"https://api.github.com/users/Shezz-er/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/Shezz-er/subscriptions","organizations_url":"https://api.github.com/users/Shezz-er/orgs","repos_url":"https://api.github.com/users/Shezz-er/repos","events_url":"https://api.github.com/users/Shezz-er/events{/privacy}","received_events_url":"https://api.github.com/users/Shezz-er/received_events","type":"User","site_admin":false,"name":null,"company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":7,"public_gists":0,"followers":2,"following":0,"created_at":"2022-04-07T20:32:16Z","updated_at":"2022-11-24T04:40:30Z","private_gists":0,"total_private_repos":2,"owned_private_repos":1,"disk_usage":12777,"collaborators":2,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as Shezz-er 
+[info] 
